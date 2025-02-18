@@ -1,6 +1,7 @@
 import styles from "./styles.module.css";
 import { useState } from "react";
 import bannerImage from "../../assets/images/bannerImage.jpg";
+import { Sozlogos } from "../../components/sozlogos";
 
 function Home() {
   const [isHovered, setIsHovered] = useState(false);
@@ -78,6 +79,7 @@ function Home() {
           </span>
         </button>
       </div>
+      <Sozlogos />
     </main>
   );
 }
