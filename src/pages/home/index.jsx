@@ -2,6 +2,7 @@ import styles from "./styles.module.css";
 import { useState } from "react";
 import bannerImage from "../../assets/images/bannerImage.jpg";
 import { Sozlogos } from "../../components/sozlogos";
+import Carten from "../../components/carten";
 
 function Home() {
   const [isHovered, setIsHovered] = useState(false);
@@ -57,6 +58,7 @@ function Home() {
           </button>
         </div> */}
       </div>
+      <Carten />
       <div className={styles.bg}>
         <button
           className={`${styles.button} ${isHovered ? styles.hovered : ""}`}
