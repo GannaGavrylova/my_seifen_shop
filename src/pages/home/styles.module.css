@@ -1,17 +1,31 @@
 .mainContainer {
-  background: linear-gradient(
+  /* background: linear-gradient(
     45deg,
     #5680e9,
     #84ceeb,
     #5ab9ea,
     #c1c8e4,
     #8860d0
-  );
+  ); */
 
-  background-color: #e6e6fa;
+  /* background-color: #e6e6fa; */
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   display: inline-block;
+  background-color: rgba(20, 30, 85, 0.9);
+  background-color: rgba(80, 80, 80, 0.9);
+  background-color: rgba(75, 20, 90, 0.9);
+  background-color: rgba(150, 110, 200, 0.9);
+  background-color: rgba(40, 202, 194, 0.9);
+  background-color: rgba(30, 160, 140, 0.9);
+  background-color: rgba(120, 20, 50, 0.9);
+  background-color: rgba(255, 175, 128, 0.9);
+  background-color: rgba(251, 206, 177, 0.9);
+  background-color: rgba(0, 127, 255, 1);
+  background-color: rgb(45, 253, 222);
+  background-color: black;
+  box-shadow: inset 5px 5px 15px rgba(0, 0, 0, 0.3),
+    inset -5px -5px 15px rgba(0, 0, 0, 0.3);
 }
 
 .secondConteiner {
