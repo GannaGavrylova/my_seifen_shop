@@ -4,38 +4,46 @@ import bannerImage from "../../assets/images/bannerImage.jpg";
 import { Sozlogos } from "../../components/sozlogos";
 import Carten from "../../components/carten";
 import ThreeBackground from "../../components/treeBackground";
+import Karusel from "../../components/karusel";
 
 function Home() {
   // const [isHovered, setIsHovered] = useState(false);
   return (
     <main className={styles.mainContainer}>
-      <div className={styles.secondConteiner}>
-        <ThreeBackground />
+      <div className={styles.ocean}>
+        <div className={styles.wave}></div>
+        <div className={styles.wave}></div>
+        <div className={styles.wave}></div>
+
+        <div className={styles.secondConteiner}>
+          <ThreeBackground />
+        </div>
+        <div>
+          <h1 style={{ color: "blue" }}>Unser Laden</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+            voluptas eligendi quidem numquam nostrum modi officia quam corporis
+            officiis itaque?
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum,
+            placeat!
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
+            neque rerum, facilis quo ipsam iure.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
+            perspiciatis voluptate doloremque quod saepe provident inventore
+            temporibus tenetur aperiam iusto.
+          </p>
+        </div>
+        <Carten />
+        <Karusel />
+        <div className={styles.bg}></div>
+        <Sozlogos />
       </div>
-      <div>
-        <h1 style={{ color: "blue" }}>Unser Laden</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
-          voluptas eligendi quidem numquam nostrum modi officia quam corporis
-          officiis itaque?
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum,
-          placeat!
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
-          neque rerum, facilis quo ipsam iure.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
-          perspiciatis voluptate doloremque quod saepe provident inventore
-          temporibus tenetur aperiam iusto.
-        </p>
-      </div>
-      <Carten />
-      <div className={styles.bg}></div>
-      <Sozlogos />
     </main>
   );
 }

@@ -1,47 +1,13 @@
 .mainContainer {
-  /* background: linear-gradient(
-    45deg,
-    #5680e9,
-    #84ceeb,
-    #5ab9ea,
-    #c1c8e4,
-    #8860d0
-  ); */
-
-  /* background-color: #e6e6fa; */
   width: 100vw;
   height: 100%;
   display: inline-block;
-  background-color: rgba(20, 30, 85, 0.9);
-  background-color: rgba(80, 80, 80, 0.9);
-  background-color: rgba(75, 20, 90, 0.9);
-  background-color: rgba(150, 110, 200, 0.9);
-  background-color: rgba(40, 202, 194, 0.9);
-  background-color: rgba(30, 160, 140, 0.9);
-  background-color: rgba(120, 20, 50, 0.9);
-  background-color: rgba(255, 175, 128, 0.9);
-  background-color: rgba(251, 206, 177, 0.9);
-  background-color: rgba(0, 127, 255, 1);
-  background-color: rgb(45, 253, 222);
-  background-color: black;
-  box-shadow: inset 5px 5px 15px rgba(0, 0, 0, 0.3),
-    inset -5px -5px 15px rgba(0, 0, 0, 0.3);
 }
 
 .secondConteiner {
   max-width: 1500px;
   width: 100%;
-  background: linear-gradient(
-    45deg,
-    #a7b8f2,
-    #bfe3f5,
-    #a3d2f0,
-    #e3e5f2,
-    #bba7e6
-  );
-
   height: 1000px;
-
   margin: 0 auto;
   border-radius: 10px;
   box-shadow: 7px 7px 15px rgba(37, 115, 137, 0.6),
@@ -216,5 +182,75 @@
   100% {
     transform: translateY(0);
     opacity: 1;
+  }
+}
+
+.ocean {
+  height: 100%;
+  margin: auto;
+  background: linear-gradient(
+    315deg,
+    #5680e9,
+    #84ceeb,
+    #5ab9ea,
+    #c1c8e4,
+    #8860d0
+  );
+  /* background-color: #2bbdef; */
+  background-size: 400% 400%;
+  background-attachment: fixed;
+  animation: gradient 25s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+.wave {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 200%;
+  height: 12em;
+  opacity: 0.8;
+  background: rgb(255 255 255 / 25%);
+  border-radius: 1000% 1000% 0 0;
+  z-index: 1;
+  transform: translate3d(0, 0, 0);
+  animation: wave 10s -3s linear infinite;
+}
+.wave:nth-of-type(2) {
+  bottom: -1.25em;
+  animation: wave 18s linear reverse infinite;
+  opacity: 0.8;
+}
+.wave:nth-of-type(3) {
+  bottom: -2.5em;
+  animation: wave 20s -1s reverse infinite;
+  opacity: 0.9;
+}
+
+@keyframes wave {
+  2% {
+    transform: translateX(1);
+  }
+  25% {
+    transform: translateX(-25%);
+  }
+  50% {
+    transform: translateX(-50%);
+  }
+  75% {
+    transform: translateX(-25%);
+  }
+  100% {
+    transform: translateX(1);
   }
 }
