@@ -5,6 +5,7 @@ import { Sozlogos } from "../../components/sozlogos";
 import Carten from "../../components/carten";
 import ThreeBackground from "../../components/treeBackground";
 import Karusel from "../../components/karusel";
+import Slider from "../../components/slider";
 
 function Home() {
   // const [isHovered, setIsHovered] = useState(false);
@@ -39,8 +40,9 @@ function Home() {
             temporibus tenetur aperiam iusto.
           </p>
         </div>
-        <Carten />
-        <Karusel />
+        {/* <Carten /> */}
+        {/* <Karusel /> */}
+        <Slider />
         <div className={styles.bg}></div>
         <Sozlogos />
       </div>

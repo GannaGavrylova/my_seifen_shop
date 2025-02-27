@@ -1,46 +1,15 @@
-/* body::before {
-  content: "";
-  position: absolute;
-  inset: 40% -60% 0 -60%;
-  opacity: 0.3;
-  pointer-events: none;
-}
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&display=swap");
 
-nav {
-  position: relative;
-  z-index: 1;
+body {
+  background: linear-gradient(
+    315deg,
+    #5680e996,
+    #84ceeb,
+    #5abaeac8,
+    #c1c8e4,
+    #8760d061
+  );
 }
-
-nav ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: flex;
-  gap: 40px;
-}
-nav ul li:not(.active) :hover button {
-  text-shadow: 0 0 10px #ff151580, 0 0 20px rgba(255, 17, 17, 0.5);
-}
-
-nav ul li button {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  border: none;
-  cursor: pointer;
-  background-color: transparent;
-  padding: 0;
-  margin: 0;
-  font-weight: 700;
-  font-size: 16px;
-  list-style: 22px;
-  color: #fff;
-  transition: color 0.25s;
-}
-
-nav.before .active-element {
-  transform: rotateY(180deg);
-} */
-
 body::before {
   content: "";
   position: absolute;
@@ -58,6 +27,8 @@ body::before {
   padding: 15px 40px;
   position: relative;
   z-index: 2;
+  /* border-bottom-right-radius: 10%;
+  border-bottom-left-radius: 10%; */
   box-shadow: 0px 12px 16px rgba(0, 0, 0, 0.2), 0px 16px 24px rgba(0, 0, 0, 0.2);
 }
 .header::after {
@@ -82,7 +53,14 @@ body::before {
   border-radius: 50%;
   box-shadow: 0px 12px 16px rgba(0, 0, 0, 0.2), 0px 16px 24px rgba(0, 0, 0, 0.2);
 }
-
+.nameLogo h3 {
+  font-family: "Pacifico", cursive;
+  font-size: 50px;
+  font-weight: 400;
+  font-style: normal;
+  color: #1b0eb3;
+  text-shadow: 1px 1px 2px rgb(64, 159, 237);
+}
 /* Навигация */
 .navbar {
   display: flex;

@@ -6,16 +6,18 @@ import icon from "../../assets/icon.svg";
 function Header() {
   return (
     <header className={styles.header}>
-      <div className={styles.logoContainer} style={{ display: "flex" }}>
+      <div className={styles.logoContainer}>
         <NavLink to="/">
-          <h3>SeifenKugeln</h3>
           <img
             src={bannerImage}
             alt="Logo"
             className={styles.logo}
-            style={{ width: "300px", height: "200px", borderRadius: "50%" }}
+            style={{ width: "150px", height: "100px", borderRadius: "50%" }}
           />
         </NavLink>
+        <div className={styles.nameLogo}>
+          <h3>SeifenKugeln</h3>
+        </div>
       </div>
 
       <nav className={styles.navbar}>

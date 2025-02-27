@@ -1,0 +1,27 @@
+.img {
+  width: 550px;
+  height: 500px;
+  margin-left: 20px;
+  border-radius: 15px;
+  object-fit: cover;
+}
+.slider {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  white-space: nowrap;
+}
+.sliderTrack {
+  display: flex;
+  gap: 20px;
+  animation: scroll 50s linear infinite;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(-10%);
+  }
+  to {
+    transform: translateX(-200%);
+  }
+}
