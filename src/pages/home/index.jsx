@@ -7,6 +7,7 @@ import ThreeBackground from "../../components/treeBackground";
 import Karusel from "../../components/karusel";
 import Slider from "../../components/slider";
 import SliderSwiper from "../../components/slideSwiper";
+import HoverCarts from "../../components/hoverCarts";
 
 function Home() {
   // const [isHovered, setIsHovered] = useState(false);
@@ -45,6 +46,7 @@ function Home() {
         {/* <Karusel /> */}
         {/* <Slider /> */}
         <SliderSwiper />
+        <HoverCarts />
         <div className={styles.bg}></div>
         <Sozlogos />
       </div>
