@@ -6,6 +6,7 @@ import Carten from "../../components/carten";
 import ThreeBackground from "../../components/treeBackground";
 import Karusel from "../../components/karusel";
 import Slider from "../../components/slider";
+import SliderSwiper from "../../components/slideSwiper";
 
 function Home() {
   // const [isHovered, setIsHovered] = useState(false);
@@ -42,7 +43,8 @@ function Home() {
         </div>
         {/* <Carten /> */}
         {/* <Karusel /> */}
-        <Slider />
+        {/* <Slider /> */}
+        <SliderSwiper />
         <div className={styles.bg}></div>
         <Sozlogos />
       </div>
